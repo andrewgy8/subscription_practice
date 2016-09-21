@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  length: number;
+  name: string;
+
+  doCheckLengthOfName(name){
+    console.log(name)
+    this.length = name.length
+  }
 }

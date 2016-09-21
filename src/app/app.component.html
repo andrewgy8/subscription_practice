@@ -1,3 +1,8 @@
 <h1>
   {{title}}
 </h1>
+
+<input type="text" [(ngModel)]="name" (keyup)="doCheckLengthOfName(name)"/>
+
+<h1>{{ name }}</h1>
+<h3> {{ length }} </h3>
